@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    background-color: #0d0e0f;
+    background-color: #07046b;
   }
   
   body,
@@ -12,6 +12,13 @@
   button {
     color: white;
     font: 400 1rem "Roboto", sans-serif;
+  }
+
+  h2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
   }
   
   button {
@@ -61,7 +68,7 @@
   }
   
   .pokemonBox img {
-    width: 200px;
+    width: 390px;
   }
   
   .pokemonBox p {
@@ -71,3 +78,48 @@
   .pokemonBox .pokemonInfos {
     padding: 2rem;
   }
+
+
+
+  @media (max-width:799px){
+    .pokemonBox .pokemonInfos {
+      padding: 1px;
+      justify-content: center;
+      display: block;
+    }
+
+    .pokemonBox img {
+      width: 500px;
+    }
+}
+
+@media (max-width: 477px) {
+  .pokemonBox .pokemonInfos {
+    padding: 1px;
+    justify-content: center;
+    display: block;
+  }
+
+
+  .pokemonBox img {
+    width: 220px;
+  }
+}
+
+@media (max-width: 375px) {
+
+  .pokemonBox .pokemonInfos {
+    padding-left: 1px;
+    justify-content: center;
+    display: inline-flexbox;
+  }
+
+
+  .pokemonBox img {
+    width: 200px;
+  }
+
+  h1 {
+    font-weight: 100;
+  }
+}
